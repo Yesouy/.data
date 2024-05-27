@@ -2,6 +2,8 @@
 #include "task.h"
 #include <stdio.h>
 
+// 2.30 pcTaskGetName.c
+
 // 태스크 함수
 void vTaskGetName(void *pvParameters)
 {
