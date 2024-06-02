@@ -26,5 +26,5 @@ int main(void)
 
     for (;;);
 
-    return 0; // 이 줄은 실행되지 않음
+    return 0;
 }
