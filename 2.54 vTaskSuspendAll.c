@@ -13,17 +13,17 @@ int main(void) {
 
 void vTask1(void *pvParameters) {
     for (;;) {
-        // 모든 작업 일시 중지
+
         vTaskSuspendAll();
-        // 중요 코드 섹션
-        xTaskResumeAll(); // 모든 작업 재개
+
+        xTaskResumeAll();
         vTaskDelay(pdMS_TO_TICKS(1000));
     }
 }
 
 void vTask2(void *pvParameters) {
     for (;;) {
-        // 다른 작업 수행
+
         vTaskDelay(pdMS_TO_TICKS(1000));
     }
 }
