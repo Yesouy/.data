@@ -32,7 +32,7 @@ void vAFunction(void)
     {
         vTaskDelay(100);
 
-        pvReturnedTaskTag = xTaskGetApplicationTaskTag(xHandle);
+        pvReturnedTaskTag = xTaskGetApplicationTaskTagFromISR(xHandle);
         
         printf("Task tag: %ld\n", (long)pvReturnedTaskTag);
     }
