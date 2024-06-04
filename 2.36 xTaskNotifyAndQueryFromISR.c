@@ -17,7 +17,6 @@ void vTask1(void *pvParameters) {
     uint32_t ulValue;
     for (;;) {
         if (xTaskNotifyWait(0x00, 0xFFFFFFFF, &ulValue, portMAX_DELAY) == pdTRUE) {
-            // 알림 값 처리
         }
     }
 }
